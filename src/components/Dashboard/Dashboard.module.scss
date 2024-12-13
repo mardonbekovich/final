@@ -1,0 +1,79 @@
+// display: flex;
+// justify-content: right;
+// align-items: baseline;
+// position: relative;
+// padding: 20px;
+.detailsRental {
+   flex: 2;
+   display: flex;
+   flex-direction: column;
+   // gap: 20px;
+   width: 534px; /* Set width to 534px */
+   border-radius: 10px;
+   .map {
+     background-color: #e0e0e0;
+     // height: 200px;
+   }
+ 
+   .carDetails {
+     background-color: #ffffff;
+     padding: 20px;
+    
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   }
+ 
+   .carHeader {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+   }
+ 
+   .carImage {
+     width: 120px;
+     height: 60px;
+     border-radius: 5px;
+   }
+ 
+   .rentalInfo {
+    
+     margin-top: 20px;
+   
+   }
+ 
+   .infoRow {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+
+     .line{
+      width: 2px;
+      background-color: #94a7cb;
+       }
+       .com{
+        img{
+           display: flex  ;
+     
+           width: 14px;
+           height: 14px;
+          }
+          div{
+           gap: 10px ;
+          
+           display: flex;
+          }
+       }
+   }
+ 
+   .totalPrice {
+     margin-top: 20px;
+     font-weight: bold;
+     font-size: 1.5em;
+     text-align: right;
+   }
+ 
+   /* Optional: Add responsiveness */
+   @media (max-width: 600px) {
+     width: 100%;  /* Make it take full width on smaller screens */
+   }
+ }
+ 
